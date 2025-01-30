@@ -1,0 +1,151 @@
+                                /* PILIHAN WARNA-WARNA */
+:root {
+    --merahkecoklatan: #a52a2a;
+    --ungumerahcerah: #c71585;
+    --merahmaruntua: #800020;
+    --putih: #ffff;
+    --black: #0000;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+  
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--putih);
+}
+
+
+                                    /* NAVIGASI START */
+
+.navigasi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4em;
+    background-color: var(--merahkecoklatan);
+    border-bottom: 9px solid var(--merahmaruntua);
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+/* navigasi bagain logo arto bawang */
+.navigasi .nav-logo {
+    font-size: 50px;
+    font-weight: 900;
+    float: left;
+    font-family: courier;
+    color: var(--putih);
+}
+
+
+/* settingan div bagian class nav-menu */
+.navigasi .nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* settingan home, partners, contact dll */
+.navigasi .nav-menu a {
+    text-decoration: none;
+    color: var(--putih);
+    font-size: 1.2rem;
+    margin: 1.5rem;
+    padding: 0;
+}
+
+/* animasi buat garis di bawah menu home, partners, dll */
+.navigasi .nav-menu a:hover {
+    text-decoration: underline;
+    color: 10px aliceblue;
+
+}
+
+.navigasi .nav-menu a::after {
+        display: block;
+        padding-bottom: 6rem;
+        border-bottom: 1rem;
+        transition: 0.2s linear;
+}
+
+
+/* settingan sign up biar ada warna */
+.navigasi .nav-menu .tbl-maroon {
+    background-color: var(--merahmaruntua);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--putih);
+}
+
+                                    /* NAVIGASI END */
+
+
+                            /* SECTION KATA BELI SEKARANG */
+
+/* untuk boder text beli sekarang */
+.hero .content .cta {
+margin-left: 37rem;
+margin-top: -320px;
+position: relative ;
+display: flex;
+padding: 1rem 3rem;
+font-size: 1.4rem;
+color: #fff;
+background-color: var(--merahmaruntua);
+border-radius: 1rem;
+}
+
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans-ms';
+    padding: 10px;
+    /* margin left berfungsi untuk menggeser text */
+    margin-left: -10px;
+}
+
+.kolom h2{
+    font-family: 'comic sans-ms';
+    font-weight: 800;
+    font-size: 39px;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 50px;
+}
+
+.kolom p {
+    text-align: justify;
+    font-size: 20px;
+    /* max-width berfungsi utk memangkas teks yang terlalu panjang */
+    max-width: 700px;
+}
+
+img {
+    width: 600px;
+  
+}
